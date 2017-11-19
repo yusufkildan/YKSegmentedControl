@@ -12,6 +12,8 @@
 		99B0DB8B1FC2319E00B669AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99B0DB891FC2319E00B669AA /* Main.storyboard */; };
 		99B0DB8D1FC2319E00B669AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99B0DB8C1FC2319E00B669AA /* Assets.xcassets */; };
 		99B0DB901FC2319E00B669AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99B0DB8E1FC2319E00B669AA /* LaunchScreen.storyboard */; };
+		99B0DB9B1FC231E700B669AA /* YKSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0DB991FC231E700B669AA /* YKSegmentedControl.swift */; };
+		99B0DB9C1FC231E700B669AA /* YKSegmentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0DB9A1FC231E700B669AA /* YKSegmentItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		99B0DB8C1FC2319E00B669AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99B0DB8F1FC2319E00B669AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99B0DB911FC2319E00B669AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99B0DB991FC231E700B669AA /* YKSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKSegmentedControl.swift; sourceTree = "<group>"; };
+		99B0DB9A1FC231E700B669AA /* YKSegmentItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKSegmentItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +42,8 @@
 		99B0DB791FC2319E00B669AA = {
 			isa = PBXGroup;
 			children = (
-				99B0DB841FC2319E00B669AA /* YKSegmentedControl */,
+				99B0DB981FC231C700B669AA /* YKSegmentedControl */,
+				99B0DB841FC2319E00B669AA /* Example */,
 				99B0DB831FC2319E00B669AA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,7 +56,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		99B0DB841FC2319E00B669AA /* YKSegmentedControl */ = {
+		99B0DB841FC2319E00B669AA /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				99B0DB851FC2319E00B669AA /* AppDelegate.swift */,
@@ -60,6 +65,16 @@
 				99B0DB8C1FC2319E00B669AA /* Assets.xcassets */,
 				99B0DB8E1FC2319E00B669AA /* LaunchScreen.storyboard */,
 				99B0DB911FC2319E00B669AA /* Info.plist */,
+			);
+			name = Example;
+			path = YKSegmentedControl;
+			sourceTree = "<group>";
+		};
+		99B0DB981FC231C700B669AA /* YKSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				99B0DB991FC231E700B669AA /* YKSegmentedControl.swift */,
+				99B0DB9A1FC231E700B669AA /* YKSegmentItem.swift */,
 			);
 			path = YKSegmentedControl;
 			sourceTree = "<group>";
@@ -137,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99B0DB9C1FC231E700B669AA /* YKSegmentItem.swift in Sources */,
 				99B0DB881FC2319E00B669AA /* ViewController.swift in Sources */,
+				99B0DB9B1FC231E700B669AA /* YKSegmentedControl.swift in Sources */,
 				99B0DB861FC2319E00B669AA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
