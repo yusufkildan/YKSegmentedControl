@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YKSegmentedControl" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,73 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZA-TE-AWs" userLabel="Simple" customClass="YKSegmetedControl" customModule="YKSegmentedControl" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="60" width="375" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="pLR-dk-blv"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQ5-Uz-IvQ" userLabel="SelectionIndicator" customClass="YKSegmetedControl" customModule="YKSegmentedControl" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="144" width="375" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Zb3-bN-zx3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1mp-Kj-yIi" userLabel="Image" customClass="YKSegmetedControl" customModule="YKSegmentedControl" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="228" width="375" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="pwg-bG-7s0"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KHj-4g-m69" userLabel="SelectionBox" customClass="YKSegmetedControl" customModule="YKSegmentedControl" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="312" width="375" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="y0m-2C-tO7"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eXZ-jp-sRp" userLabel="SelectionBox &amp; SelectionIndicator" customClass="YKSegmetedControl" customModule="YKSegmentedControl" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="396" width="375" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="7Ge-BK-MaF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.88816861579754602" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qQ5-Uz-IvQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0ok-ZU-0Iw"/>
+                            <constraint firstItem="KHj-4g-m69" firstAttribute="top" secondItem="1mp-Kj-yIi" secondAttribute="bottom" constant="40" id="7MA-Mn-o8T"/>
+                            <constraint firstItem="eZA-TE-AWs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BDk-hZ-hm6"/>
+                            <constraint firstAttribute="trailing" secondItem="1mp-Kj-yIi" secondAttribute="trailing" id="CWN-hX-DWF"/>
+                            <constraint firstItem="1mp-Kj-yIi" firstAttribute="top" secondItem="qQ5-Uz-IvQ" secondAttribute="bottom" constant="40" id="Dz5-5j-L1Z"/>
+                            <constraint firstItem="1mp-Kj-yIi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Fd2-Bz-tmD"/>
+                            <constraint firstItem="eXZ-jp-sRp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ivd-rZ-QuL"/>
+                            <constraint firstItem="eZA-TE-AWs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="MqL-Ng-ttq"/>
+                            <constraint firstAttribute="trailing" secondItem="eZA-TE-AWs" secondAttribute="trailing" id="RFX-d1-OpY"/>
+                            <constraint firstAttribute="trailing" secondItem="qQ5-Uz-IvQ" secondAttribute="trailing" id="TtD-IU-YZ4"/>
+                            <constraint firstAttribute="trailing" secondItem="eXZ-jp-sRp" secondAttribute="trailing" id="VHt-LO-UAb"/>
+                            <constraint firstItem="qQ5-Uz-IvQ" firstAttribute="top" secondItem="eZA-TE-AWs" secondAttribute="bottom" constant="40" id="gDf-QH-NJJ"/>
+                            <constraint firstItem="eXZ-jp-sRp" firstAttribute="top" secondItem="KHj-4g-m69" secondAttribute="bottom" constant="40" id="s5k-Uf-OB1"/>
+                            <constraint firstAttribute="trailing" secondItem="KHj-4g-m69" secondAttribute="trailing" id="uu3-6G-PMr"/>
+                            <constraint firstItem="KHj-4g-m69" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yAo-OM-DLm"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="segmentedControlWithBoxAndIndicator" destination="eXZ-jp-sRp" id="uQH-Lw-Ey1"/>
+                        <outlet property="segmentedControlWithImage" destination="1mp-Kj-yIi" id="5NC-9f-Pom"/>
+                        <outlet property="segmentedControlWithSelectionBox" destination="KHj-4g-m69" id="UH4-WQ-PrY"/>
+                        <outlet property="segmentedControlWithSelectionIndicator" destination="qQ5-Uz-IvQ" id="Lpl-lO-eGz"/>
+                        <outlet property="simpleSegmentedControl" destination="eZA-TE-AWs" id="hNW-as-lr8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="131.78410794602701"/>
         </scene>
     </scenes>
 </document>
